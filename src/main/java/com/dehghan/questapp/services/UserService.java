@@ -28,7 +28,7 @@ public class UserService {
         return userRepository.save(newUser); /**Daha sonra o User Objesini DataBase save ediyim*/
     }
 
-    public User getOneUser(Long userId) {
+    public User getOneUserById(Long userId) {
 
         return userRepository.findById(userId).orElse(null);
     }

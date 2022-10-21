@@ -37,7 +37,7 @@ public class UserController {
     public User getOneUser(@PathVariable Long userId){
         //custom Exception --> Bu User veri tabanında olmayabilir
         //Burada diyorum ki eğer User bulamazsan Null dön bana
-        return userService.getOneUser(userId);
+        return userService.getOneUserById(userId);
     }
 
     @PutMapping("/{userId}")
